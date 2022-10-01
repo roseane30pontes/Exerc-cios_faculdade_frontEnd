@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Incorporando Javascript em Páginas HTML</title>
+    <!-- Incorporando um arquivo .js externo -->
+    <script src="script.js"></script>
+</head>
+<body>
+    
+</body>
+    <!-- Incorporando códigos Javascript diretamente na página -->
+    <script type="text/javascript">
+        
+        var operacao = prompt ("Qual será a operação? (utilize + para adição, - para subtração, * para multiplicação e / para divisão)");
+        var primeiroNumero = prompt ("Agora digite o primeiro número:");
+        var segundoNumero = prompt ("Segundo número:")
+        
+        resultado = 0;
+
+        if (operacao=='+') 
+        {
+            resultado = adicao(primeiroNumero,segundoNumero);
+        }
+        if (operacao=='-')
+        {
+            resultado = subtracao(primeiroNumero,segundoNumero);
+        }
+        if (operacao=='*')
+        {
+            resultado = multiplicacao(primeiroNumero,segundoNumero);
+        }
+        if (operacao=='/')
+        {
+            resultado = divisao(primeiroNumero,segundoNumero);
+        }
+        
+
+        alert ('O resutado da operação é igual a:' + resultado);
+
+        function adicao(a,b)
+        {
+            return parseInt(a)+parseInt(b);
+        }
+
+        function subtracao(a,b)
+        {
+            return parseInt(a)-parseInt(b);
+        }
+
+        function multiplicacao(a,b)
+        {
+            return parseInt(a)*parseInt(b);
+        }
+
+        function divisao(a,b)
+        {
+            return parseInt(a)/parseInt(b);
+        }
+   
+    </script>
+</html>
+
+
+
+
+
+

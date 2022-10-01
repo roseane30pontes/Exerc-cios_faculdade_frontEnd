@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Incorporando Javascript em Páginas HTML</title>
+    <!-- Incorporando um arquivo .js externo -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="exibe_resultado"> O resultado da divisão é igual a: </div>
+</body>
+
+    <!-- Incorporando códigos Javascript diretamente na página -->
+    <script type="text/javascript">
+        
+        var primeiroNumero= prompt ("Digite um primeiro numero:");
+        var segundoNumero = prompt ("Digite um segundo numero:");
+        
+        var resultado = primeiroNumero/segundoNumero;
+
+        alert ('O resutado da divisao é igual a:' + resultado);
+
+        function divida(PrimeiroNumero,segundoNumero)
+        {
+
+            var resultadodivisao = 0;
+
+            resultadodivisao = primeiroNumero/segundoNumero;
+            return resultado;
+
+        }
+    </script>
+</html>
+
+
+
+
+
+

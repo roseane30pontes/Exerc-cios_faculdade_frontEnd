@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Incorporando Javascript em Páginas HTML</title>
+    <!-- Incorporando um arquivo .js externo -->
+    <script src="script.js"></script>
+</head>
+<body>
+    
+</body>
+    <!-- Incorporando códigos Javascript diretamente na página -->
+    <script type="text/javascript">
+        
+       
+        var numeros = [] 
+        
+        numeros[0] = solicitaNumero1();
+        numeros[1] = solicitaNumero2();
+
+        var resultadoDivisao = divida(numeros);
+
+        alert ("O resultado da divisão é:" + resultadoDivisao);
+
+        function solicitaNumero1 ()
+        {
+            var numero1 = prompt("Qual primeiro número?");
+
+            if (numero1 < 0)
+            {
+                alert ("número não aceito, digite novamente o número");
+                return solicitaNumero1();
+            }
+            else
+            {
+                return numero1;
+            }
+        }
+
+
+        function solicitaNumero2 ()
+        {
+            var numero2 = prompt ("Qual o segundo número?");
+
+            if (numero2 < 0)
+            {
+                alert ("número não aceito, digite novamente o número");
+                return solicitaNumero2();
+            }
+            else
+            {
+                return numero2;
+            }
+        }
+
+
+        function divida (numeros)
+        {
+            var resultado = 0
+            resultado=numeros[0]/numeros[1];
+            return resultado;
+        }
+        
+    </script>
+</html>
+
+
+
+
+
+
